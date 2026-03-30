@@ -3,10 +3,25 @@
 <head>
 <!-- add required and recommended <meta> tags -->
 <meta charset="UTF-8">
-<meta name="viewport" content="width-device-width, initial-scale=1"
+<meta name="viewport" content="width-device-width, initial-scale=1">
 <meta name="author" content="Olivia Parker">
 <meta name="description" content="Limitless Fitness, where fitness meets community. Our state-of-the-art facility is designed to inspire and support you at every stage of your journey. Whether you're a beginner or a seasoned athlete, our expert trainers and diverse classes provide the perfect environment to achieve your personal best.">
-<meta name="robots" content="noindex, follow">
+<meta name="keywords" content="fitness, lifestyle">
+  
+<!-- OPEN GRAPH/SOCIAL MEDIA META TAGS -->
+	<!-- For Twitter -->
+<meta name=“twitter:card” content="Limitless Fitness">
+<meta name=“twitter:site” content="file:///Users/oliviaparker/Desktop/Visual%20Studio%20Websites/limitlessfitnessgym/index.html#">
+<meta name=“twitter:creator” content="Olivia Parker">
+<meta name=“twitter:title” content=“Training”>
+<meta name=“twitter:description” content="Take your fitness to the next level with our one-on-one training sessions. Our certified trainers work with you to create a customized plan that fits your lifestyle and targets your specific goals. Ready for a change?">
+<meta name=“twitter:image” content=“images/dumbells.jpg”>
+
+	<!-- Open Graph -->
+<meta property=“og:url” content="file:///Users/oliviaparker/Desktop/Visual%20Studio%20Websites/limitlessfitnessgym/index.html#">
+<meta property=“og:type” content="Take your fitness to the next level with our one-on-one training sessions. Our certified trainers work with you to create a customized plan that fits your lifestyle and targets your specific goals. Ready for a change?">
+<meta property=“og:image” content=“images/dumbells.jpg”>
+
 <title>Limitless Fitness</title>
 </head>
 <body>
@@ -120,19 +135,19 @@
         <input name="phone-num" type="tel" id="phone-num" required>
         
         <fieldset>
-        <legend for="mem-type">Membership Type</legend>
+        <legend>Membership Type</legend>
         <p>Select a Membership Option</p>
-        <label for="mem-type">Monthly Membership</label>
+        <label for="monthly-mem">Monthly Membership</label>
         <input name="mem-type" type="radio" id="monthly-mem" required>
 
-        <label for="mem-type">Annual Membership</label>
+        <label for="annual-mem">Annual Membership</label>
         <input name="mem-type" type="radio" id="annual-mem" required>
         
-        <label for="mem-type">Family & Group Plans</label>
+        <label for="family-mem">Family & Group Plans</label>
         <input name="mem-type" type="radio" id="family-mem" required>
         </fieldset>
         <label for="goals">Tell us about your fitness goals:</label>
-        <textarea name="goals" type="text" id="goals"></textarea>
+        <textarea name="goals" id="goals"></textarea>
         <input type="submit" value="Submit">
         </form>
       </section>
