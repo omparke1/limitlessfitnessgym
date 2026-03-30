@@ -5,7 +5,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width-device-width, initial-scale=1"
 <meta name="author" content="Olivia Parker">
-<meta name="description" content="">
+<meta name="description" content="Limitless Fitness, where fitness meets community. Our state-of-the-art facility is designed to inspire and support you at every stage of your journey. Whether you're a beginner or a seasoned athlete, our expert trainers and diverse classes provide the perfect environment to achieve your personal best.">
+<meta name="robots" content="noindex, follow">
 <title>Limitless Fitness</title>
 </head>
 <body>
@@ -36,7 +37,7 @@
 
   </header>
   <nav>
-    Main Navigation
+    <h2>Main Navigation</h2>
     <ul>
       <li><a href="#">About Us</a></li>
       <li><a href="#">Classes</a></li>
@@ -48,10 +49,10 @@
   </nav>
   <main>
     <section id="main-content">
-      About Us
+      <h2>About Us</h2>
       <p>Welcome to Limitless Fitness, where fitness meets community. Our state-of-the-art facility is designed to inspire and support you at every stage of your journey. Whether you're a beginner or a seasoned athlete, our expert trainers and diverse classes provide the perfect environment to achieve your personal best.</p>
       <section>
-        What Sets Us Apart
+        <h3>What Sets Us Apart</h3>
         <ul>
           <li>Personalized Training: Customized workout plans tailored to your goals.</li>
           <li>Top-of-the-Line Equipment: The latest gear to ensure effective and safe workouts.</li>
@@ -61,7 +62,7 @@
       </section>
     </section>
     <section>
-      Our Classes
+      <h2>Our Classes</h2>
       <p>Discover a wide variety of classes designed to challenge and energize you.</p>
       <ul>
         <li>HIIT & Cardio: Boost your endurance and burn calories.</li>
@@ -72,11 +73,16 @@
       </ul>
 <!-- add alt text where necessary -->
 <!-- add responsive images for resolution switching -->
-        src="images/classes.jpg"
+      <picture>
+        <source media="(min-width: 440px)" srcset="images/classes.jpg">
+        <source media="(min-width: 950px)" srcset="images/classes.jpg">
+        <source media="(min-width: 1220px)" srcset="images/classes.jpg">
+        <img src="images/classes.jpg" alt="classes">
+      </picture>
 
     </section>
     <section>
-      Personal Training
+      <h2>Personal Training</h2>
       <p>
         Take your fitness to the next level with our one-on-one training sessions. Our certified trainers work with you to create a customized plan that fits your lifestyle and targets your specific goals.
         Ready for a change?
@@ -84,11 +90,15 @@
       <a href="#">Book a Free Consultation today!</a>
 <!-- add alt text where necessary -->
 <!-- add responsive images for resolution switching -->
-        src="images/dumbells.jpg"
-
+      <picture>
+        <source media="(min-width: 440px)" srcset="images/dumbells.jpg">
+        <source media="(min-width: 950px)" srcset="images/dumbells.jpg">
+        <source media="(min-width: 1220px)" srcset="images/dumbells.jpg">
+        <img src="images/dumbells.jpg" alt="dumbells">
+      </picture>
     </section>
     <section>
-      Membership Options
+      <h2>Membership Options</h2>
       <p>At Limitless Fitness, we offer flexible membership plans to suit your needs.</p>
       <ul>
         <li>Monthly Memberships: Perfect for those who want to try us out.</li>
@@ -96,9 +106,10 @@
         <li>Family & Group Plans: Get fit together and save more.</li>
       </ul>
       <section id="membership-form">
-        Join Limitless Fitness Today!
+        <h3>Join Limitless Fitness Today!</h3>
         <p>Fill out the form below to kickstart your fitness journey:</p>
 <!--add accessibility to the form-->
+        <form action="POST" method="https://wp.zybooks.com/form-viewer.php">
         Full Name
         Email Address
         Phone Number
@@ -109,6 +120,7 @@
           Family & Group Plans
         Tell us about your fitness goals:
         Submit
+        </form>
       </section>
     </section>
   </main>
