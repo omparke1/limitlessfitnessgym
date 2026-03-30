@@ -31,7 +31,7 @@
     <picture>
       <source media="(min-width: 440px)" srcset="images/facility.jpg">
       <source media="(min-width: 950px)" srcset="images/facility.jpg">
-      <source media="(min-width: 1220px)" srcset="images/facility.jpg">
+      <source media="(min-width: 1440px)" srcset="images/facility.jpg">
       <img src="images/facility.jpg" alt="facility">
     </picture>
 
@@ -76,7 +76,7 @@
       <picture>
         <source media="(min-width: 440px)" srcset="images/classes.jpg">
         <source media="(min-width: 950px)" srcset="images/classes.jpg">
-        <source media="(min-width: 1220px)" srcset="images/classes.jpg">
+        <source media="(min-width: 1440px)" srcset="images/classes.jpg">
         <img src="images/classes.jpg" alt="classes">
       </picture>
 
@@ -93,7 +93,7 @@
       <picture>
         <source media="(min-width: 440px)" srcset="images/dumbells.jpg">
         <source media="(min-width: 950px)" srcset="images/dumbells.jpg">
-        <source media="(min-width: 1220px)" srcset="images/dumbells.jpg">
+        <source media="(min-width: 1440px)" srcset="images/dumbells.jpg">
         <img src="images/dumbells.jpg" alt="dumbells">
       </picture>
     </section>
@@ -109,23 +109,37 @@
         <h3>Join Limitless Fitness Today!</h3>
         <p>Fill out the form below to kickstart your fitness journey:</p>
 <!--add accessibility to the form-->
-        <form action="POST" method="https://wp.zybooks.com/form-viewer.php">
-        Full Name
-        Email Address
-        Phone Number
-        Membership Type
-          Select a Membership Option
-          Monthly Membership
-          Annual Membership
-          Family & Group Plans
-        Tell us about your fitness goals:
-        Submit
+        <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+        <label for="full-name">Full Name</label>
+        <input name="full-name" type="text" id="full-name" required>
+
+        <label for="email-address">Email Address</label>
+        <input name="email-address" type="email" id="email-address" required>
+        
+        <label for="phone-num">Phone Number</label>
+        <input name="phone-num" type="tel" id="phone-num" required>
+        
+        <fieldset>
+        <legend for="mem-type">Membership Type</legend>
+        <p>Select a Membership Option</p>
+        <label for="mem-type">Monthly Membership</label>
+        <input name="mem-type" type="radio" id="monthly-mem" required>
+
+        <label for="mem-type">Annual Membership</label>
+        <input name="mem-type" type="radio" id="annual-mem" required>
+        
+        <label for="mem-type">Family & Group Plans</label>
+        <input name="mem-type" type="radio" id="family-mem" required>
+        </fieldset>
+        <label for="goals">Tell us about your fitness goals:</label>
+        <textarea name="goals" type="text" id="goals"></textarea>
+        <input type="submit" value="Submit">
         </form>
       </section>
     </section>
   </main>
   <aside>
-    Testimonials
+    <h2>Testimonials</h2>
     <q>
       Joining Limitless Fitness has completely transformed my approach to fitness. The supportive community and expert guidance have made all the difference! - Alex R.
     </q>
@@ -135,7 +149,7 @@
   </aside>
   <footer>
     <section>
-      Stay connected
+      <h2>Stay connected</h2>
       <ul>
         <li>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#007BFF" width="35" height="35">
@@ -155,7 +169,7 @@
       </ul>
     </section>
     <section>
-      Contact Us
+      <h2>Contact Us</h2>
       <address>
         <p>1234 HIIT St. <br>
         Mesa, AZ 85222 <br>
